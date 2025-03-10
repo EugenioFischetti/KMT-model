@@ -837,7 +837,7 @@ def main():
     
     st.markdown("""
         <div style="background-color: #F3F3F3; padding: 10px; text-align: center;">
-          <p style="font-size: 20px; font-weight: bold;">A maintenance policy for major and minor inspections in a three-stage failure process subject to external shocks</p>
+          <p style="font-size: 20px; font-weight: bold;">Major and minor inspections in a two-phase delay-time process that considers external shocks</p>
           <p style="font-size: 15px;">By: Eugenio A. de S. Fischetti, Yan-Fu Li & Cristiano A. V. Cavalcante</p>
         </div>
         """, unsafe_allow_html=True)
@@ -858,8 +858,8 @@ def main():
         forma2=st.number_input("Insert the shape parameter for the major defect arrival by natural degradation (βy\u2082)", min_value = 1.0, max_value=5.0, value = 2.5, help="This parameter specifies the shape parameter for the Weibull distribution, representing the major defect arrival by degradation.")
         l_tx=st.number_input("Insert the rate of the exponential distribution for delay-time (λ)", min_value = 0.0, value = 2.0, help="This parameter defines the rate of the Exponential distribution, which governs the transition from the defective to the failed state of a component.")
         b=st.number_input("Insert the false-negative probability (\u03B5)", min_value = 0.0, max_value=1.0, value = 0.15, help="This parameter represents the probability of not indicating a defect during inspection when, in fact, it does exist.")
-        ci=st.number_input("Insert cost of inspection (C_{I})", min_value = 0.0, value = 0.1, help="This parameter represents the cost of conducing an minor inspection.")
-        cb=st.number_input("Insert cost of inspection (C_{b})", min_value = 0.0, value = 0.3, help="This parameter represents the cost of conducing an major inspection.")
+        ci=st.number_input("Insert cost of inspection (C_{I})", min_value = 0.0, value = 0.1, help="This parameter represents the cost of conducting a minor inspection.")
+        cb=st.number_input("Insert cost of inspection (C_{b})", min_value = 0.0, value = 0.3, help="This parameter represents the cost of conducting a major inspection.")
         cr=st.number_input("Insert cost of replacement (inspections and age-based) (C_{R})", min_value = 0.0, value = 1.0, help="This parameter represents the cost associated with preventive replacements, whether performed during inspections or when the age-based threshold is reached.")
         cf=st.number_input("Insert cost of failure (C_{F})", min_value = 0.0, value = 10.0, help="This parameter represents the replacement cost incurred when a component fails.")
         c = st.number_input("Insert cost per major defective time unit (c)", min_value=0.0, value=100.0)
@@ -922,7 +922,7 @@ def main():
     if choice == menu[1]:
         st.header(menu[1])
         st.write("<h6 style='text-align: justify; color: Blue Jay;'>This application calculates the cost ratio for a maintenance model based on a two-phase time-delay approach for single-component systems subject to natural degradation and external shocks. The proposed inspection and replacement (I/R) policy aims to optimize inspection intervals and maintenance actions, considering the possibility of imperfect inspections..</h6>", unsafe_allow_html=True)
-        st.write("<h6 style='text-align: justify; color: Blue Jay;'>The app computes the cost-rate for a specific solution—defined by the number of major inspections until preventive replacement (K), number of minor inspections up to the major inspection (included) (Δ);  and the time interval between two consecutive inspections; (T).</h6>", unsafe_allow_html=True)
+        st.write("<h6 style='text-align: justify; color: Blue Jay;'>The app computes the cost-rate for a specific solution—defined by the number of major inspections until preventive replacement (K), number of minor inspections up to the major inspection (included) (M);  and the time interval between two consecutive inspections; (T).</h6>", unsafe_allow_html=True)
         st.write("<h6 style='text-align: justify; color: Blue Jay;'>For further questions or information on finding the optimal solution, please contact one of the email addresses below.</h6>", unsafe_allow_html=True)
         
         st.write('''
