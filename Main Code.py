@@ -887,7 +887,7 @@ def main():
         with col3:
             T = st.number_input(
                 "Interval between inspections (T)", 
-                min_value=0.1, value=2.0, step=0.5,
+                min_value=0.1, value=.5, step=0.5,
                 format="%.1f",
                 help="Fixed time interval between consecutive minor inspections"
             )
