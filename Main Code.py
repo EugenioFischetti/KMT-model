@@ -862,7 +862,7 @@ def main():
         cb=st.number_input("Insert cost of inspection (C_{b})", min_value = 0.0, value = 0.3, help="This parameter represents the cost of conducing an major inspection.")
         cr=st.number_input("Insert cost of replacement (inspections and age-based) (C_{R})", min_value = 0.0, value = 1.0, help="This parameter represents the cost associated with preventive replacements, whether performed during inspections or when the age-based threshold is reached.")
         cf=st.number_input("Insert cost of failure (C_{F})", min_value = 0.0, value = 10.0, help="This parameter represents the replacement cost incurred when a component fails.")
-        c = st.number_input("Insert cost per major defective time unit (c)", min_value=0.0, value=100)
+        c = st.number_input("Insert cost per major defective time unit (c)", min_value=0.0, value=100.0)
 
         col1, col2 = st.columns(2)
         
