@@ -907,8 +907,7 @@ def main():
                     # Mostrando o resultado (AGORA USANDO cost_rate)
                     st.metric(
                         label="Cost-Rate", 
-                        value=f"{cost_rate:.4f}", 
-                        help="Average cost per unit time"
+                        value=f"{cost_rate:.4f}"
                     )
             except Exception as e:
                 st.error(f"Error: {str(e)}")
