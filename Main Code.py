@@ -838,7 +838,7 @@ def main():
     st.markdown("""
         <div style="background-color: #F3F3F3; padding: 10px; text-align: center;">
           <p style="font-size: 20px; font-weight: bold;">Major and minor inspections in a two-phase delay-time process that considers external shocks</p>
-          <p style="font-size: 15px;">By: Eugenio A. de S. Fischetti, Yan-Fu Li & Cristiano A. V. Cavalcante</p>
+          <p style="font-size: 15px;">By: Eugenio A. de S. Fischetti, Augusto J. S. Rodrigues & Cristiano A. V. Cavalcante</p>
         </div>
         """, unsafe_allow_html=True)
 
@@ -928,7 +928,7 @@ def main():
 
 e.a.s.fischetti@random.org.br
 
-liyanfu@tsinghua.edu.cn
+a.j.s.rodrigues@random.org.br 
 
 c.a.v.cavalcante@random.org.br
 
