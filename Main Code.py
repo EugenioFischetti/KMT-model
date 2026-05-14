@@ -940,5 +940,8 @@ c.a.v.cavalcante@random.org.br
                  in order to bring together different researchers who work in the following areas: risk, maintenance a
                  nd operation modelling. Learn more about it through our website.''')
         st.markdown('[Click here to be redirected to our website](https://sites.ufpe.br/random/#page-top)',False)        
-if __name__ == "__main__":
+if st._is_running_with_streamlit:
     main()
+else:
+    sys.argv = ["streamlit", "run", sys.argv[0]]
+    sys.exit(stcli.main())
