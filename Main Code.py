@@ -1,7 +1,5 @@
 import streamlit as st
 import numpy as np
-import sys
-from streamlit import cli as stcli
 from scipy.integrate import quad #Single integral
 from scipy.integrate import dblquad
 from scipy.integrate import tplquad # Integral tripla
@@ -940,8 +938,5 @@ c.a.v.cavalcante@random.org.br
                  in order to bring together different researchers who work in the following areas: risk, maintenance a
                  nd operation modelling. Learn more about it through our website.''')
         st.markdown('[Click here to be redirected to our website](https://sites.ufpe.br/random/#page-top)',False)        
-if st._is_running_with_streamlit:
+if __name__ == "__main__":
     main()
-else:
-    sys.argv = ["streamlit", "run", sys.argv[0]]
-    sys.exit(stcli.main())
