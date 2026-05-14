@@ -828,10 +828,10 @@ def KMT(K, M, T, b1, n1, forma2, escala2, l_tx, b, ci, cb, cr, cf, c, mi):
 def main():
     #criando 3 colunas
     col1, col2, col3= st.columns(3)
-    #foto = Image.open('randomen.png')
+    foto = Image.open('randomen.png')
     #st.sidebar.image("randomen.png", use_column_width=True)
     #inserindo na coluna 2
-    #col2.image(foto, use_column_width=True)
+    col2.image(foto, use_column_width=True)
     #O código abaixo centraliza e atribui cor
     st.markdown("<h2 style='text-align: center; color: #306754;'>2L-Inspection DSS: A decision support system for a two-level inspection policy under shocks.</h2>", unsafe_allow_html=True)
     
