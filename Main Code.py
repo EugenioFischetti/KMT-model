@@ -829,7 +829,7 @@ def main():
     #criando 3 colunas
     col1, col2, col3= st.columns(3)
     foto = Image.open('randomen.png')
-    #st.sidebar.image("randomen.png", use_column_width=True)
+    st.sidebar.image("randomen.png", use_column_width=True)
     #inserindo na coluna 2
     col2.image(foto, use_column_width=True)
     #O código abaixo centraliza e atribui cor
